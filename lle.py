@@ -281,7 +281,7 @@ def LLE(
                 cached_h_half = None  # force recompute
 
         # Accept: Richardson-extrapolated result
-        h_phot = 2 * h  # effective step (h was halved during the two-step)
+        h_phot = h  # effective step
         tphot += h_phot
 
         Aft = fft(4.0 / 3 * A2 - 1.0 / 3 * A1)
